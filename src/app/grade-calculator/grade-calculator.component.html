@@ -1,0 +1,26 @@
+<div class="grade-calculator">
+    <h2>Calculadora de Notas</h2>
+    <form>
+      <div class="form-group">
+        <label for="grade1">Nota 1</label>
+        <input type="number" id="grade1" name="grade1" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="grade2">Nota 2</label>
+        <input type="number" id="grade2" name="grade2" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="grade3">Nota 3</label>
+        <input type="number" id="grade3" name="grade3" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="grade4">Nota 4</label>
+        <input type="number" id="grade4" name="grade4" class="form-control" required>
+      </div>
+      <button type="button" class="btn btn-primary" (click)="calculateAverage()">Calcular Promedio</button>
+    </form>
+    <div>
+      <p>Promedio: {{ average }}</p>
+    </div>
+  </div>
+  
